@@ -46,6 +46,24 @@ class Producto {  // <!-- constructor -->
 id++
 const venta =  new Producto("lapiz",130,"libreria")
 
+// imprimir en el html
+
+const lista = document.getElementById("lista-dinamica");
+
+const arrayItem = ["Te compraste un lapiz re cheto"];
+
+const fragment = document.createDocumentFragment();
+
+arrayItem.forEach((item) => {
+  const li = document.createElement("li");
+  li.textContent = item;
+  fragment.appendChild(li);
+});
+
+lista.appendChild(fragment);
+
+
+
 console.log(venta)
 
 alert("ahora puedes ver lo que compraste por consola!")
@@ -80,6 +98,23 @@ class Producto {  // <!-- constructor -->
 }
 id2++
 const venta =  new Producto("gotita",170,"libreria")
+
+// imprimir en el html
+
+const lista = document.getElementById("lista-dinamica");
+
+const arrayItem = ["Hola soy un carrito muy precario, Compraste una gotita (?"];
+
+const fragment = document.createDocumentFragment();
+
+arrayItem.forEach((item) => {
+  const li = document.createElement("li");
+  li.textContent = item;
+  fragment.appendChild(li);
+});
+
+lista.appendChild(fragment);
+
 
 console.log(venta)
 
