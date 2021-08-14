@@ -21,13 +21,11 @@
 
 
 
-alert("Hola y Bienvenido Mayorista Web por favor ir al fondo de la pagina y comprar un articulo. :)")
+
 
 let id = 0
 // Inicia la compra  marcador
 document.querySelector("#crearOb").addEventListener("click", () =>{
-	
-
 	
 class Producto {  // <!-- constructor -->
 
@@ -49,38 +47,25 @@ const venta =  new Producto("lapiz",130,"libreria")
 // imprimir en el html
 
 const lista = document.getElementById("lista-dinamica");
+const arrayItem = ["item 1", "item 2", "item 3"];
 
-const arrayItem = ["Te compraste un lapiz re cheto"];
-
-const fragment = document.createDocumentFragment();
-
+let template = "";
 arrayItem.forEach((item) => {
-  const li = document.createElement("li");
-  li.textContent = item;
-  fragment.appendChild(li);
+  template += `
+    <li class="list">
+        <b>nombre: </b> <span class="text-danger">${item}</span>
+    </li>
+    `;
 });
-
-lista.appendChild(fragment);
-
-
-
-console.log(venta)
-
-alert("ahora puedes ver lo que compraste por consola!")
+lista.innerHTML = template;
 } );
 
 // inicio de la compra gotita
 
 
-
-
-
-
 let id2 = 0
 // Inicia la compra  marcador
 document.querySelector("#crearOb2").addEventListener("click", () =>{
-	
-
 	
 class Producto {  // <!-- constructor -->
 
@@ -102,21 +87,20 @@ const venta =  new Producto("gotita",170,"libreria")
 // imprimir en el html
 
 const lista = document.getElementById("lista-dinamica");
+const arrayItem = ["item 1", "item 2", "item 3"];
 
-const arrayItem = ["Hola soy un carrito muy precario, Compraste una gotita (?"];
-
-const fragment = document.createDocumentFragment();
-
+let template = "";
 arrayItem.forEach((item) => {
-  const li = document.createElement("li");
-  li.textContent = item;
-  fragment.appendChild(li);
+  template += `
+    <li class="list">
+        <b>nombre: </b> <span class="text-danger">${item}</span>
+    </li>
+    `;
 });
-
-lista.appendChild(fragment);
+lista.innerHTML = template;
 
 
 console.log(venta)
 
-alert("ahora puedes ver lo que compraste por consola!")
+
 } );
