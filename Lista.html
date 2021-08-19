@@ -1,439 +1,127 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="lista.css" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+	</head>
+	<body>
+	<!-- barra nav -->
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-
-    <title>Lista</title>
-  </head>
-  <body>
-    
-<!-- barra nav -->
-
-
-
-<div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Mayorista Web</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-             </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Lista.html">Lista de Precios</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Libreria.html">Libreria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Perfumeria.html">Perfumeria</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Almacén.html">Almacén</a>
-              </li>
-             
-            </ul>
-          </div>
-        </div>
-      </nav>
-</div>
+	<div>
+		<nav class="navbar navbar-dark bg-dark">
+			<div class="container-fluid">
+			  <a class="navbar-brand" href="#">Mayorista Web</a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+				 </button>
+			  <div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+				  <li class="nav-item">
+					<a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Lista.html">Lista de Precios</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Libreria.html">Libreria</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Perfumeria.html">Perfumeria</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="Almacén.html">Almacén</a>
+				  </li>
+				 
+				</ul>
+			  </div>
+			</div>
+		  </nav>
+	</div>
 
 <!-- fin barra nav -->
-<!-- articulos de almacen -->
-<div style="width: 25%;">
-<table class="table table-hover">
-  <thead>
-    <tr class="table-warning">
-      <th scope="col">#</th>
-      <th scope="col">Varios</th>
-      <th scope="col">Cantidad</th>
-      <th scope="col">Precio</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Shampu Pantene</td>
-      <td>x1</td>
-      <td>11$</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Shampu Sedal</td>
-      <td>x1</td>
-      <td>10$</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Lampara Maquilux led</td>
-      <td>x1</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Escarbadientes aladino</td>
-      <td>x1 </td>
-      <td>18$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Bombillas</td>
-      <td>x1</td>
-      <td>45$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Solucion kid</td>
-      <td>x1</td>
-      <td>120$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Fastix</td>
-      <td>x1</td>
-      <td>200$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Tetina</td>
-      <td>x10</td>
-      <td>140$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Pilas redondas(Alarma)</td>
-      <td>x1</td>
-      <td>70$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Presto azul</td>
-      <td>x1</td>
-      <td>70$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Pastillas azul raid</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Linterna</td>
-      <td>x1</td>
-      <td>200$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Espejo Grande</td>
-      <td>x1</td>
-      <td>150$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Plantilla de zapatilla</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Encendedor Bic Maxi</td>
-      <td>x1</td>
-      <td>85$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Encendedor Transparente</td>
-      <td>x1</td>
-      <td>24$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Hilo de cocer</td>
-      <td>x12</td>
-      <td>200$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Agujas canastita</td>
-      <td>x1</td>
-      <td>35$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Colita silicona mini</td>
-      <td>x1</td>
-      <td>20$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Invisible</td>
-      <td>x48</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Gillete Roja</td>
-      <td>x5</td>
-      <td>150$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Chupete anatomic Cris</td>
-      <td>x6</td>
-      <td>300$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Mamadera lisa policris</td>
-      <td>x40</td>
-      <td>130$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Energizer Pila AA</td>
-      <td>x1</td>
-      <td>59$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Parches</td>
-      <td>x36</td>
-      <td>170$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Off crema</td>
-      <td>x1</td>
-      <td>80$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Presto Venus</td>
-      <td>x1</td>
-      <td>88$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Fastic</td>
-      <td>x2</td>
-      <td>88$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Gel Dore</td>
-      <td>x1</td>
-      <td>85$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Fraco Analisis</td>
-      <td>x1</td>
-      <td>48$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Cordon largo</td>
-      <td>x12</td>
-      <td>240$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Hilo de barrilete</td>
-      <td>x10</td>
-      <td>240$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Pinza ceja</td>
-      <td>x12</td>
-      <td>330$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Gomines</td>
-      <td>x100</td>
-      <td>100$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Hisopo Ideal</td>
-      <td>x100</td>
-      <td>75$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Toallas humedas ideal</td>
-      <td>x1</td>
-      <td>75$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Anilina</td>
-      <td>x1</td>
-      <td>200$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Talco Eicient</td>
-      <td>x1</td>
-      <td>100$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Alikate chico</td>
-      <td>x1</td>
-      <td>70$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Alikate grande</td>
-      <td>x1</td>
-      <td>100$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Gasas</td>
-      <td>x10</td>
-      <td>130$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Tela medicional</td>
-      <td>x1</td>
-      <td>35$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Azufre</td>
-      <td>x5</td>
-      <td>48$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Alcohol 500ml</td>
-      <td>x1</td>
-      <td>110$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Ecole</td>
-      <td>x1</td>
-      <td>250$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Broche ropa</td>
-      <td>x1</td>
-      <td>85$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Fosforo Fragata</td>
-      <td>x10</td>
-      <td>100$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Fosforo Patito</td>
-      <td>x1</td>
-      <td>48$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Presto 3 filos</td>
-      <td>x1</td>
-      <td>95$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Cepillos Colgate Ultra</td>
-      <td>x1</td>
-      <td>48$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Globo liso</td>
-      <td>x50</td>
-      <td>240$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Globo de cumnpleaños</td>
-      <td>x50</td>
-      <td>280$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Bengala</td>
-      <td>x4</td>
-      <td>120$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Minora 2 filos plus</td>
-      <td>x1</td>
-      <td>45$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Pañuelo Elite</td>
-      <td>x6</td>
-      <td>55$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Desodorante odorono </td>
-      <td>x1</td>
-      <td>180$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Axe Aerosol</td>
-      <td>x1</td>
-      <td>150$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Beldent</td>
-      <td>x1</td>
-      <td>34$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Caramelos Hall</td>
-      <td>x1</td>
-      <td>34$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Colgate 70gr</td>
-      <td>x1</td>
-      <td>100$</td>
-    </tr>
-    <tr>
-      <th scope="row">1</th>
-      <td>Jabon Rexona</td>
-      <td>x1</td>
-      <td>38$</td>
-    </tr>
-    <tr>
-      <th scope="row"></th>
-      <td>Dave Aerosol</td>
-      <td>x1</td>
-      <td>180$</td>
-    </tr>
-  </tbody>
-</table>
+
+<section><!-- carusel con 5 imagenes -->
+	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
+			<div class="carousel-item active" data-bs-interval="10000">
+				<img src="logos e imagenes/asdasdas3.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item" data-bs-interval="10000">
+				<img src="logos e imagenes/slide1.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item" data-bs-interval="10000">
+				<img src="logos e imagenes/slide4.jpg" class="d-block w-100" alt="...">
+			</div>
+			<div class="carousel-item" data-bs-interval="10000">
+				<img src="logos e imagenes/asdasd4.jpg" class="d-block w-100" alt="...">
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+			data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+			data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</div>
+</section>
+
+<!-- ARticulos de libreria  -->
+<div class="card mb-3">
+	<!-- <img src="https://cflvdg.avoz.es/sc/tK7C24Aoxz0jJv0kjXkMRxL488A=/768x/2020/09/02/00121599066061803301381/Foto/AS3C4F1_1.jpg" class="card-img-top img-thumbnail rounded" alt="..."> -->
+		<div class="card-body">
+	  		<h5 class="card-title">Lista de Precios</h5>
+	 		 <p class="card-text"> Actualizada en agosto.</p>
+	  <p class="card-text"><small class="text-muted">Venta minima 2000$ (Envio gratis)</small></p>
+		</div>
+  </div>
+<!-- tablas  -->
+
+
+<div class="..." id="listaa">
+
+    <table class="table table-striped" id="lista">        
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Precio</th>
+          </tr>        
+      
+      </table>
+</div>
+<!-- lista 2 -->
+<div class="..." id="listee">
+
+    <table class="table table-striped" id="listaDos">        
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Precio</th>
+          </tr>        
+      
+      </table>
+</div>
+<!-- lista 3 -->
+
+
+<div class="..." id="listoo">
+
+    <table class="table table-striped" id="listaTres">        
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Cantidad</th>
+            <th scope="col">Precio</th>
+          </tr>        
+      
+      </table>
 </div>
 
 
@@ -441,9 +129,22 @@
 
 
 
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
-  
-  </body>
+<!-- FIN ARticulos de libreria  -->
+
+  <footer>
+	<p class="btn btn-secondary" id="foo">  | Primer entrega del Proyecto final
+		 </p>
+  </footer>
+
+
+
+
+
+<!-- ARchivos referenciados de main.js y bootstrap  -->
+	
+	<script src="lista.js"></script>
+	<script> src="app.js"</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+	</body>
 </html>
